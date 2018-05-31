@@ -1,0 +1,37 @@
+{
+  "name": "com.nustechnology.applewatchconnectivity",
+  "version": "0.1.1",
+  "description": "Apple Watch Connectivity Plugin",
+  "cordova": {
+    "id": "com.nustechnology.applewatchconnectivity",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lytieunuong1/com.nustechnology.applewatchconnectivity.git"
+  },
+  "keywords": [
+    "Apple watch",
+    "Apple watch connectivity",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=7.1.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.5.4"
+    }
+  ],
+  "author": "NUS Technology Company",
+  "license": "Apache 2.0 License",
+  "bugs": {
+    "url": "https://github.com/lytieunuong1/com.nustechnology.applewatchconnectivity/issues"
+  },
+  "homepage": "https://github.com/lytieunuong1/com.nustechnology.applewatchconnectivity#readme"
+}
