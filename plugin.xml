@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.nustechnology.applewatchconnectivity"
+                version="0.1.1">
+    <name>Apple Watch Connectivity</name>
+    <description>Apple Watch Connectivity Plugin</description>
+    <author>NUS Technology</author>
+    <license>Apache 2.0 License</license>
+    <keywords>Apple watch, Apple watch connectivity</keywords>
+    <!-- <repo>https://github.com/Telerik-Verified-Plugins/NativePageTransitions.git</repo> -->
+
+    <!-- <issue>https://github.com/Telerik-Verified-Plugins/NativePageTransitions/issues</issue> -->
+
+    <engines>
+        <engine name="cordova" version=">=7.1.0"/>
+        <engine name="cordova-ios" version=">=4.5.4" />
+    </engines>
+
+    <js-module src="www/applewatchconnectivity.js" name="NUSAppleWatchConnectivity">
+        <clobbers target="NUSAppleWatchConnectivity" />
+    </js-module>
+    
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="NUSAppleWatchConnectivity">
+                <param name="ios-package" value="NUSAppleWatchConnectivity" onload="true"/>
+            </feature>
+        </config-file>
+        <config-file target="*-Info.plist" parent="CFBundleURLTypes" >
+            <array>
+                <dict>
+                    <key>UIBackgroundModes</key>
+                    <array>
+                        <string>fetch</string>
+                        <string>remote-notification</string>
+                    </array>
+                </dict>
+            </array>
+        </config-file>
+        <header-file src="src/AppleWatchConnectivity.h"/>
+        <source-file src="src/AppleWatchConnectivity.m"/>
+    </platform>
+</plugin>
